@@ -1,0 +1,35 @@
+/* box model */
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 0;
+}
+
+.box {
+  padding: 5rem;
+  margin: 3rem;
+  background-color: aquamarine;
+  border: 2rem black solid;
+}
+
+/* Units in CSS */
+/* rem, em, px, cm */
+
+/* Padding, Margin, & border */
+.card {
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 30px;
+  border: 10px black solid;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  /* padding: top rigth bottom left ; */
+  padding: 0 10px 0 10px;
+}

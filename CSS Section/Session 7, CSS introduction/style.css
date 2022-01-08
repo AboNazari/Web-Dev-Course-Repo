@@ -1,0 +1,15 @@
+/* Conecting CSS to HTMl */
+/* CSS selectors */
+/* CSS specificity */
+
+.header {
+  color: blue;
+}
+
+h1.header {
+  color: red;
+}
+
+h1 {
+  color: aqua;
+}
