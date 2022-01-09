@@ -1,0 +1,43 @@
+/* Coloring in CSS */
+/* Color, Border-color, background-color */
+
+h1 {
+  color: red;
+  background-color: blue;
+
+  border-color: black;
+  border-width: 8px;
+  border-style: solid;
+
+  /* border: solid black 8px; */
+}
+
+/* color Types */
+/* Color Name */
+/* Hex #000 */
+/* rgb & rgba */
+.box {
+  background-color: rgba(151, 43, 43, 0.4);
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  margin: 2rem;
+}
+
+/* Width and Heigth */
+/* length, % , auto, initial, inherit*/
+.box1 {
+  background-color: blueviolet;
+  height: 200px;
+  text-align: center;
+  width: 1200px;
+}
+
+/* max-width */
+.box2 {
+  background-color: cadetblue;
+  height: 200px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* outline */
