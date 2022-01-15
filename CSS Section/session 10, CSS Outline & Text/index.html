@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paprika&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>CSS Outline</title>
+  </head>
+  <body>
+    <!-- ouline -->
+    <!-- Text -->
+    <!-- Text Shadow -->
+    <div class="one">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis
+        natus quo similique obcaecati ea quod. Numquam expedita temporibus qui
+        laboriosam officia, officiis dolore perspiciatis ipsa placeat tempora
+        iusto velit?
+      </p>
+    </div>
+    <div class="two">
+      <quote>
+        “Your task is not to seek for love, but merely to seek and find all the
+        barriers within yourself that you have built against it.”
+      </quote>
+      <br />
+      <span>― Rumi <i class="far fa-thumbs-up"></i> </span
+      ><i class="fas fa-home"></i>
+    </div>
+  </body>
+  <style>
+    .one {
+      margin: 2rem;
+      padding: 1rem;
+      outline: 4px groove red;
+      outline-offset: 10px;
+      color: #f00;
+      background-color: yellowgreen;
+      background-clip: content-box;
+      text-align: justify;
+      text-align-last: center;
+      word-spacing: 2px;
+      line-height: 23px;
+    }
+    .two {
+      font-family: "Paprika", cursive;
+      font-style: oblique;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-indent: 10px;
+      letter-spacing: 2px;
+      background-color: #36b351;
+      margin: 2rem;
+      padding: 1rem;
+      color: rgb(255, 252, 252);
+      border: 4px groove #36b3a7;
+      text-shadow: 1px 1px 5px red, 2px 2px 6px blue;
+      border-radius: 1rem;
+    }
+    i {
+      color: black;
+      font-size: 2rem;
+    }
+  </style>
+</html>
