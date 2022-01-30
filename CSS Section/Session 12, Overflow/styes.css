@@ -1,0 +1,80 @@
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* overflow */
+.overflow {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  border: 1px solid black;
+  /* overflow-y: scroll; */
+  overflow: auto;
+  padding: 1rem;
+}
+
+.box {
+  width: 200px;
+  height: auto;
+  border: 2px solid red;
+  margin: 0.2em;
+  padding: 0.4em;
+  float: left;
+}
+
+.box3 {
+  width: 100px;
+  height: auto;
+  border: 2px solid red;
+  margin: 0.2em;
+  padding: 0.4em;
+  clear: left;
+}
+
+.lands {
+  border: red 2px dotted;
+  margin: 1rem;
+}
+img {
+  padding: 1rem;
+  width: 100px;
+  float: left;
+}
+/* .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* inline-block */
+.inline1 {
+  padding: 1rem;
+  border: 3px solid green;
+  width: 200px;
+  display: inline-block;
+  margin: 1rem;
+}
+
+/* Align */
+
+/* .inline2 {
+  padding: 1rem;
+  border: 3px solid green;
+  width: 300px;
+  margin: auto;
+  position: absolute; 
+   bottom: 30%;
+  right: 1rem;
+  text-align: center;
+  padding-top: 3rem;
+  line-height: 3;
+} */
+
+/* combinators + > ~ */
+/* div > p {
+  color: red;
+} */
+div + ul {
+  margin: 10rem;
+}
