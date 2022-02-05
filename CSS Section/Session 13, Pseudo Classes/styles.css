@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* font-size: 12px; */
+}
+/* Pseudo class */
+.box1 p {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  margin-top: 2rem;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+.box1 p:hover {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+}
+.box1 a {
+  padding: 2rem;
+  margin: 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+/* .box1 a:visited {
+  background-color: red;
+} */
+.box1 a:active {
+  background-color: red;
+}
+
+/* lang */
+.box1 q:lang(yes) {
+  quotes: "@" "$";
+}
+
+/*Pseudo Elements  */
+
+.box2 p {
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  margin-top: 3rem;
+  border: 1px solid black;
+  /* margin-bottom: 2rem; */
+  padding: 1rem;
+}
+
+.box2 p::first-line {
+  color: red;
+}
+.box2 p::first-letter {
+  font-size: 3rem;
+}
+
+.box2::after {
+  content: "Hello World";
+  position: absolute;
+  left: 50%;
+  background-color: blue;
+  padding: 2rem;
+  color: white;
+}
+.box2::before {
+  content: url("");
+  position: absolute;
+  left: 50%;
+  background-color: blue;
+  /* padding: 2rem; */
+  color: white;
+}
+
+/* pseudo selectors */
+ul li:first-child {
+  font-size: 2rem;
+}
+ul li:last-child {
+  font-size: 2rem;
+}
+ul li:nth-child(even) {
+  font-size: 2rem;
+}
+
+/* opacity */
+img {
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-bottom: 10%;
+  /* opacity: 0.1; */
+  transition: all 1s ease-in;
+}
+img:hover {
+  opacity: 1;
+}
+
+.opp {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 25%;
+  top: 110%;
+  height: 400px;
+  width: 300px;
+  transition: all ease-in-out 1s;
+}
+.opp:hover {
+  background: rgba(0, 0, 0, 0);
+}
+/* .opp:hover {
+  background: hsla(154, 90%, 74%, 0.4);
+}
+
+/* Units in CSS */
+/* absolute */
+/* .opp {
+  padding: 500px;
+  padding: 1cm;
+  padding: 1mm;
+  padding: 1in;
+  padding: 12pt;
+  padding: 1pc;
+} */
+
+/* relative units */
+/* .opp {
+  font-size: 2px;
+  padding: 2em;
+  padding: 1rem;
+  width: 10px !important;
+  height: 20vh;
+  width: 50vw;
+  margin-left: 20%;
+} */
