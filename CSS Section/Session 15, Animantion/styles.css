@@ -1,0 +1,47 @@
+.Transform {
+  padding: 2rem;
+  background-color: brown;
+  color: #fff;
+  width: 400px;
+  /* transform: rotate(-25deg); */
+  /* transform: rotateX(180deg); */
+  /* transform: scale(1.5); */
+  /* transform: skew(20deg); */
+  /* transform: translateY(120px); */
+  /* transform: matrix(1, 0.3, 0, 1, 0, 0); */
+  /* transition-property: transform;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+  transition-delay: 2s; */
+  transition: transform 2s ease;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  /* animation-delay: 4s; */
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  animation-fill-mode: forward;
+}
+
+/* .Transform:hover {
+  transform: scale(0.5);
+} */
+
+@keyframes spin {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translate(200px, 0);
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: translate(200px, 200px);
+  }
+  75% {
+    transform: translate(-200px, 200px);
+  }
+  100% {
+    transform: translate(-200px, 200px);
+  }
+}

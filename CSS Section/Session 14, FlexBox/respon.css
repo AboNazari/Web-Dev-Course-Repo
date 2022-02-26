@@ -1,0 +1,38 @@
+body {
+  box-sizing: border-box;
+}
+.flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button1 {
+  background-color: blue;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  flex: 50%;
+  padding: 1rem 0;
+}
+p {
+  display: none;
+}
+
+.button2 {
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  flex: 50%;
+  padding: 1rem 0;
+}
+@media (max-width: 700px) {
+  .button1,
+  .button2 {
+    flex: 100%;
+  }
+  p {
+    display: block;
+  }
+}
