@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(162, 222, 230);
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: blue;
+}
+
+button {
+  padding: 1rem 2rem;
+  background: blue;
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.par {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 764px) {
+  .par {
+    flex-direction: column;
+  }
+  button {
+    background-color: black;
+    animation: break;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  h1 {
+    visibility: hidden;
+    /* display: none; */
+  }
+}
+
+@keyframes break {
+  25% {
+    background-color: green;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
